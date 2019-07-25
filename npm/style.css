@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+* {
+    font-family: 'Russo One', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+input, textarea {
+    transition: border-color ease-in-out 0.3s;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 0 5px;
+    display: block;
+    width: 100%;
+    height: 35px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #C62828;
+}
+
+textarea {
+    resize: vertical;
+    height: 10rem;
+}
+
+label {
+    display: block;
+}
+
+button {
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid #C62828;
+    color: #C62828;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C62828;
+    color: white;
+}
+
+.form {
+    width: 50vw;
+    padding: 5px;
+}
+
+.separate {
+    margin: 10px 0;
+}
+
+.npm {
+    transition: ease-in-out 0.5s;
+    color: white;
+}
+
+.title-container:hover {
+    background-color: white;
+}
+
+.title-container:hover .npm {
+    color: #C62828;
+}
+
+.title-container {
+    transition: ease-in-out 0.5s;
+    background-color: #C62828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    -webkit-box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.43);
+    box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.43);
+    z-index: 3;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+}
+
+.alert {
+    color: black;
+    padding: 10px;
+    position: absolute;
+    top: 12vh;
+    right: 10px;
+    border-radius: 10px;
+    display: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    -webkit-box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.suggestion-new {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.suggestion-card {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    -webkit-box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 7px 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-body {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.suggestion-name {
+    height: 30%;
+    text-align: center;
+}
+
+.suggestion-reason {
+    height: 50%;
+}
+
+.suggestion-footer {
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+    display: flex;
+    padding-top: 10px;
+}
+
+.suggestion-user {
+    width: 100%;
+    text-align: right;
+    color: #C62828;
+    height: 20%;
+}
+
+.suggestion-time {
+    width: 100%;
+    text-align: left;
+    color: #C62828;
+    height: 20%;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("https://docs.npmjs.com/assets/images/packages-and-modules/deprecate-message.png");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: fixed;
+    z-index: 1;
+}

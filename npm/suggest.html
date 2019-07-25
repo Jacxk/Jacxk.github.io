@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="container">
+    <div class="title-container">
+        <h1 class="title"><span class="npm">NPM</span> Suggestions</h1>
+    </div>
+    <div class="alert"></div>
+    <div class="form-container">
+        <form class="form" autocomplete="off">
+            <p class="separate" style="font-size: 14px; color:gray;">
+                Leave your suggestion for the next episode of the NPM series.
+            </p>
+            <label class="separate">
+                Username:
+                <input name="username" required placeholder="For a shout-out?">
+            </label>
+            <label class="separate">
+                Package Name:
+                <input name="package-name" required placeholder="Maybe you could add the name">
+            </label>
+            <label class="separate">
+                Package Link:
+                <input name="link" required placeholder="Provide link plox">
+            </label>
+            <label class="separate">
+                Reason:
+                <textarea name="reason" required placeholder="Why should I make a video about this"></textarea>
+            </label>
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="handler.js"></script>
+</body>
+</html>
